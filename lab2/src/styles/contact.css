@@ -79,17 +79,7 @@ body::before {
     margin: 20px auto;
 }
 
-/* контейнер с информацией обо мне */
-.profile {
-    display: flex;
-    width: 100%;
-    padding: 30px 0;
-    margin: 20px auto;
-}
-
-/* контейнер с текстом */
-.about {
-    width: 50%; 
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,48 +87,50 @@ body::before {
     text-align: center;
 }
 
-/* контейнер с картинкой */
-.avatar {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-/* настройки картинки */
-.avatar img {
-    width: 240px;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-}
-
-.about h1 {
+.contact h2 {
     color: #ccc;
-    margin-top: 0;
+    margin-top: 20px;
     font-size: 33px;
 }
 
-.about ul {
+.links {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.links a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+
+.links ul {
     list-style: none;
 }
 
-.about li {
+.links li {
+    margin-top: 20px;
     margin-bottom: 6px;
     color: #ccc;
 }
 
 /* нижний бар */
 .bottombar {
-  text-align: center;
-  font-size: 13px;
-  padding: 15px;
-  margin: 20px auto;
-  max-width: 1800px;
-  width: 90%;
-  color: #aaa;
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+    max-width: 1800px;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    color: #aaa;
 }
-
