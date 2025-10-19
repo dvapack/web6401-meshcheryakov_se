@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('/home/flowersinvase/Uni/Labs/web6401-meshcheryakov_se/lab2/images/background.jpg') center/cover no-repeat;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+
+/* эффект стекла */
+.glass {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+}
+
+/* верхний бар */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    margin: 20px auto;
+    max-width: 1800px;
+    width: 90%;
+}
+
+.name {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 6px 12px;
+    border-radius: 15px;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* основной контейнер */
+.container {
+    flex: 1;
+    max-width: 1800px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* контейнер для проектов */
+.projects {
+  padding: 20px;
+  color: #ccc;
+}
+
+/* название таблицы */
+.table-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-right: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.th, td a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.th, td a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+
+th:last-child, td:last-child {
+  border-right: none;
+}
+
+th {
+  background: rgba(255, 255, 255, 0.12);
+  font-weight: 500;
+  text-align: center;
+}
+
+td {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* нижний бар */
+.bottombar {
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 1800px;
+  width: 90%;
+  color: #aaa;
+}
+

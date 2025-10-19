@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Sergey's Portfolio</title>
+    <link rel="stylesheet" href="../styles/projects.css"/>
+</head>
+<body>
+    <header class="topbar glass">
+      <div class="name">Sergey's Portfolio</div>
+      <nav class="nav">
+        <a href="main_page.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="projects glass">
+            <h3 class="table-title">Pet projects</h3>
+                <div>
+                    <table class="projects-table">
+                        <thead>
+                        <tr>
+                            <th>Name</th><th>Stack</th><th>Info</th><th>Authors</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td><a href="https://github.com/dvapack/generatorgena/tree/frontend_v2" target="_blank"> Гена</a></td><td>Python, FastAPI, Django, PyTorch, PostgreSQL, Docker, React JS</td><td>Учебный проект, в рамках которого было необходимо
+реализовать веб-приложение. Проектом занимались два человека, в мои обязанности
+входило написание бэкенд части, написание модели, MLOps и создание дизайна. В последствии
+обновил фронтенд, чтобы он соответствовал макету. В дальнейшем планирую обновить модель для
+генерации изображений, так как из-за ограничений по железу удалось реализовать только простую
+генеративную модель с низким разрешением сгенерированного изображения.</td><td>Sergey Meshcheryakov, Darya Ivanova</td></tr>
+                        <tr><td><a href="https://github.com/dvapack/nir_6_sem" target="_blank"> Scientific research work</a></td><td>Python, PyTorch</td><td>Я занимаюсь написанием научно-исследовательских работ в области компьютерного зрения. На данный момент проведено исследование по теме "Идентификация
+людей на основе распознавания лиц с применением нейронных сетей результаты которого были
+представлены в рамках внутривузовской LXXV Молодёжной научной конференции. В процессе ис-
+следования были обучены и валидированы следующие модели - FaceNet, MobileFaceNet, GhostFaceNet.</td><td>Sergey Meshcheryakov</td></tr>
+                        <tr><td><a href="https://github.com/dvapack/gym_bot" target="_blank"> Gym Bot</a></td><td>Python, Aiogram, Asyncpg</td><td>Телеграм бот с базой данных для учета прогресса в зале. На данный момент находится в стадии MVP</td><td>Sergey Meshcheryakov</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+        </section>
+    </main>
+
+    <footer class="bottombar glass">
+        Сергей — создатель самого эстетичного портфолио на пми
+    </footer>
+</body>
+</html>
