@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Sergey's Portfolio</title>
+    <link rel="stylesheet" href="../styles/auth.css"/>
+</head>
+<body>
+    <header class="topbar glass">
+    <div class="name">Sergey's Portfolio</div>
+    <nav class="nav">
+        <a href="main_page.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="auth.html" class="nav-link active">Auth</a>
+    </nav>
+    </header>
+
+    <main class="container">
+        <section class="auth glass">
+            <h2 class="title">Authorization</h2>
+            <form id="auth-form" class="form">
+                <div class="form-group">
+                    <label for="login">Login:</label>
+                    <input type="text" id="login" name="login" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="agreement">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        I agree to the processing of personal data
+                    </label>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bottombar glass">
+        Сергей — создатель самого эстетичного портфолио на пми
+    </footer>
+    <script src="../js/auth.js"></script>
+</body>
+</html>
