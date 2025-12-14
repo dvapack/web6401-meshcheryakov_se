@@ -43,6 +43,7 @@ function recSumTo(n) {
  * @param {*} n
  */
 function factorial(n) {
+    if (typeof n !== 'number' || !Number.isInteger(n) || n < 0) return null;
     if (n === 0 || n === 1) return 1;
     return n * factorial(n - 1);
 }

@@ -111,7 +111,9 @@ document.getElementById('auth-form').addEventListener('submit', async function(e
         });
 
         if (response.ok) {
+            const result = await response.json();
             console.log(user.formatOutput());
+            console.log('Server response:', result);
             alert('Data submitted successfully!');
         } else {
             alert('Failed to submit data.');

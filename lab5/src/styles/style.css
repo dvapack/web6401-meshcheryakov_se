@@ -42,7 +42,7 @@ body::before {
     height: 100%;
     background:
         linear-gradient(var(--blur-bg), var(--blur-bg)),
-        url('../../images/background.jpg');
+        url('/images/background.jpg');
     filter: blur(3px);
     z-index: -1;
 }
