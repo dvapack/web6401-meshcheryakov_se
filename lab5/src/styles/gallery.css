@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #ccc;
+    --bottom-color: #aaa;
+    --glass-bg: rgba(255, 255, 255, 0.06);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --glass-shadow: rgba(255, 255, 255, 0.05);
+    --hover-bg: rgba(255, 255, 255, 0.1);
+    --active-bg: rgba(255, 255, 255, 0.15);
+    --blur-bg: rgba(0,0,0,0.4);
+    --border-radius: 20px;
+    --small-border-radius: 15px;
+    --tiny-border-radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(var(--blur-bg), var(--blur-bg)),
+        url('/images/background.jpg');
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.glass {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 25px var(--glass-shadow);
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    margin: 20px auto;
+    max-width: 1800px;
+    width: 90%;
+}
+
+.name {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 6px 12px;
+    border-radius: 15px;
+}
+
+.nav-link:hover {
+    background: var(--hover-bg);
+}
+
+.nav-link.active {
+    background: var(--active-bg);
+}
+
+.container {
+    flex: 1;
+    max-width: 1800px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.gallery {
+    padding: 20px;
+    color: var(--secondary-color);
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.image {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: var(--tiny-border-radius);
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.bottombar {
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 1800px;
+  width: 90%;
+  color:var(--bottom-color);
+}
